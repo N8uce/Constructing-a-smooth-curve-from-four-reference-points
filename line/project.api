@@ -1,0 +1,27 @@
+# control.h task.h
+!control.cpp control.h graphics.h keys_n_colors.h #<#>
+!main.cpp control.h graphics.h keys_n_colors.h task.h #<#>
+!task.cpp cctype cerrno clocale cstdint cstdio cstdlib ctype.h cwchar cwctype errno.h exception graphics.h initializer_list ios iosfwd iostream istream keys_n_colors.h limits limits.h locale.h new ostream signal.h stddef.h stdexcept stdint.h stdio.h stdlib.h streambuf string string_view system_error task.h type_traits typeinfo wchar.h wctype.h #<#>
+ struct@Control _type_ #<control.h>
+ struct@Point _type_ #<task.h>
+Point_bezie(Point p1, Point p2, Point p3, Point p4, double t) -> Point #<task.cpp>
+Point_bezie(Point, Point, Point, Point, double) -> Point #<task.h>
+arr_p : Point[] #<task.cpp>
+bezier() -> void #<task.h>
+chaiykin() -> void #<task.h>
+control_values : enum #<control.h>
+controls : Control[] #<control.cpp>
+create_control(int i, int left, int top, const char* file_name) -> void #<control.cpp>
+create_control(int, int, int, const char*) -> void #<control.h>
+getpoint(int width, int height) -> void #<task.cpp>
+getpoint(int, int) -> void #<task.h>
+main() -> int #<main.cpp>
+save() -> void #<task.h>
+select_control() -> int #<control.h>
+vPoint : Point #<task.cpp>
+	Control::left : int #<control.h>
+	Control::top : int #<control.h>
+	Control::right : int #<control.h>
+	Control::bottom : int #<control.h>
+	Point::x : int #<task.h>
+	Point::y : int #<task.h>
